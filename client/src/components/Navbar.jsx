@@ -119,7 +119,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   to="/register"
-                  className="px-4 py-1.5 text-sm font-medium text-slate-950 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg hover:opacity-90 transition-opacity font-semibold shadow-md shadow-emerald-500/20"
+                  className="px-4 py-1.5 text-sm  text-slate-950 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg hover:opacity-90 transition-opacity font-semibold shadow-md shadow-emerald-500/20"
                 >
                   Get Started
                 </Link>

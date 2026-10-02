@@ -166,8 +166,49 @@ const getMe = async (req, res, next) => {
   }
 };
 
+/**
+ * @desc    Update user demographics
+ * @route   PUT /api/v1/auth/profile
+ * @access  Private
+ */
+const updateDemographics = async (req, res, next) => {
+  try {
+    const { name, age, cityTier, dependents, hasFamily } = req.body;
+
+    const fieldsToUpdate = {};
+    if (name) fieldsToUpdate.name = name;
+    if (age !== undefined) fieldsToUpdate.age = Number(age);
+    if (cityTier) fieldsToUpdate.cityTier = cityTier;
+    if (dependents !== undefined) fieldsToUpdate.dependents = Number(dependents);
+    if (hasFamily !== undefined) fieldsToUpdate.hasFamily = Boolean(hasFamily);
+
+    const user = await User.findByIdAndUpdate(req.user._id, fieldsToUpdate, {
+      new: true,
+      runValidators: true,
+    });
+
+    res.status(200).json({
+      success: true,
+      message: 'User demographics updated successfully.',
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        age: user.age,
+        cityTier: user.cityTier,
+        dependents: user.dependents,
+        hasFamily: user.hasFamily,
+      },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 module.exports = {
   register,
   login,
   getMe,
+  updateDemographics,
+
 };

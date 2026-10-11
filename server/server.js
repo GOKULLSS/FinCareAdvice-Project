@@ -9,9 +9,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const connectDB = require('./config/db');
-// const apiRoutes = require('./routes/api');
-// const errorHandler = require('./middleware/errorHandler');
-// const DailySentiment = require('./models/DailySentiment');
+const apiRoutes = require('./routes/api');
+const errorHandler = require('./middleware/errorHandler');
+const DailySentiment = require('./models/DailySentiment');
 
 // Initialize Express App
 const app = express();
@@ -46,7 +46,7 @@ const limiter = rateLimit({
 app.use('/api', limiter);
 
 // Mount API Routes
-// app.use('/api/v1', apiRoutes);
+app.use('/api/v1', apiRoutes);
 
 // Root route
 app.get('/', (req, res) => {
@@ -59,7 +59,7 @@ app.get('/', (req, res) => {
 });
 
 // Central Error Handler
-// app.use(errorHandler);
+app.use(errorHandler);
 
 // Connect to MongoDB and start listening
 const startServer = async () => {

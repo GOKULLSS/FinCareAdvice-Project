@@ -58,25 +58,24 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             {/* Pill Badge */}
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-emerald-500/30 text-emerald-400 text-xs font-medium mb-8 backdrop-blur-md shadow-lg shadow-emerald-950/40">
+            {/* <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-emerald-500/30 text-emerald-400 text-xs font-medium mb-8 backdrop-blur-md shadow-lg shadow-emerald-950/40">
               <Sparkles className="w-3.5 h-3.5 animate-pulse text-emerald-400" />
               <span>Hybrid Wealth Architecture Engine</span>
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
               <span className="text-slate-400">Deterministic Rules + DistilBERT NLP</span>
-            </div>
+            </div> */}
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.12]">
               Intelligent Financial Planning.{' '}
               <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">
-                Safeguarded by Design.
+                Powered by Market Intelligence.
               </span>
             </h1>
 
             {/* Sub-headline */}
             <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-              Replace guesswork with an institutional-grade financial advisory engine.
-              Automate your emergency fund targets, calculate health cover adequacy, and optimize your asset allocation with real-time AI news sentiment bounded within strict ±5% safety guardrails.
+              Secure your emergency reserves, debt, and insurance with strict deterministic rules, unlocking AI-driven portfolio insights only when your foundation is safe.
             </p>
 
             {/* CTA Buttons */}
@@ -117,7 +116,7 @@ const LandingPage = () => {
           </div>
 
           {/* Real-time Market Sentiment Bar */}
-          <div className="mt-16 max-w-4xl mx-auto bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 backdrop-blur-xl shadow-2xl">
+          {/* <div className="mt-16 max-w-4xl mx-auto bg-slate-900/90 border border-slate-800/90 rounded-2xl p-5 backdrop-blur-xl shadow-2xl">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pb-4 border-b border-slate-800">
               <div className="flex items-center space-x-2.5">
                 <div className="relative">
@@ -135,9 +134,9 @@ const LandingPage = () => {
               </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4"> */}
               {/* Equities */}
-              <div className="p-3.5 rounded-xl bg-slate-950/60 border border-slate-800/60 flex items-center justify-between">
+              {/* <div className="p-3.5 rounded-xl bg-slate-950/60 border border-slate-800/60 flex items-center justify-between">
                 <div>
                   <p className="text-xs text-slate-400 font-medium">Equities Sentiment</p>
                   <p className="text-lg font-bold text-white mt-0.5">
@@ -153,10 +152,10 @@ const LandingPage = () => {
                 >
                   {(sentiment?.equities || 0) >= 0 ? 'Bullish' : 'Bearish'}
                 </div>
-              </div>
+              </div> */}
 
               {/* Debt */}
-              <div className="p-3.5 rounded-xl bg-slate-950/60 border border-slate-800/60 flex items-center justify-between">
+              {/* <div className="p-3.5 rounded-xl bg-slate-950/60 border border-slate-800/60 flex items-center justify-between">
                 <div>
                   <p className="text-xs text-slate-400 font-medium">Debt / Bonds Sentiment</p>
                   <p className="text-lg font-bold text-white mt-0.5">
@@ -172,10 +171,10 @@ const LandingPage = () => {
                 >
                   {(sentiment?.debt || 0) >= 0 ? 'Accommodative' : 'Yield Pressure'}
                 </div>
-              </div>
+              </div> */}
 
               {/* Gold */}
-              <div className="p-3.5 rounded-xl bg-slate-950/60 border border-slate-800/60 flex items-center justify-between">
+              {/* <div className="p-3.5 rounded-xl bg-slate-950/60 border border-slate-800/60 flex items-center justify-between">
                 <div>
                   <p className="text-xs text-slate-400 font-medium">Gold / Safe-Haven</p>
                   <p className="text-lg font-bold text-white mt-0.5">
@@ -193,7 +192,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

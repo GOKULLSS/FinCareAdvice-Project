@@ -44,9 +44,9 @@ const Navbar = () => {
             <div>
               <span className="text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
                 FinCare<span className="text-emerald-400">Advice</span>
-                <span className="text-[10px] uppercase font-mono tracking-wider px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                {/* <span className="text-[10px] uppercase font-mono tracking-wider px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                   AI Hybrid
-                </span>
+                </span> */}
               </span>
             </div>
           </Link>
